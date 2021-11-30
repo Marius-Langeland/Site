@@ -1,8 +1,32 @@
-#s1{ color: salmon; }
-#s2{ text-decoration: underline; }
-#s3{ text-transform: uppercase; }
-#s4{ text-align: center; }
-#s5{ letter-spacing: 8px;}
-#s6{ direction: rtl;}
-#s7{ word-spacing: 20px;}
-#s8{ text-shadow: 1px 2px sandybrown;}
+tr{ height: 50px; }
+td{ width: 200px; }
+
+td{
+    border-bottom: 1px solid #DDD;
+    border-collapse: collapse;
+}
+
+th{
+    color: white;
+    background-color: teal;
+}
+
+tr:nth-child(odd){
+    background-color: #EEE;
+    color: teal;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF;
+}
+
+th, td{
+    text-align: left;
+    padding: 10px;
+}
+
+table{
+    border: 1px solid #DDD;
+    border-bottom: 2px solid teal;
+    border-collapse: collapse;
+}
