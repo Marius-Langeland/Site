@@ -1,0 +1,45 @@
+.navbar{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    border-top: 10px solid #FAB;
+}
+
+.navbar li {float: left}
+
+.navbar li a{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar li:hover {background-color: rgb(255, 233, 236);}
+
+.active{
+    background-color: #FAB;
+    color: #333;
+}
+
+body p {margin: 5px auto auto auto;}
+body h1 {margin: 10px 0px}
+body {margin: 0px 0px 50px}
+body #home-content {margin: auto 10px}
+
+.footer-links{
+    list-style-type: square;
+    padding-left: 15px;
+}
+
+footer {
+    margin-top: 75px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FAB;
+    border-top: 2px solid #FAB;
+}
+
+#copyright{
+    text-align: center;
+}
