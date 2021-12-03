@@ -1,32 +1,38 @@
-tr{ height: 50px; }
-td{ width: 200px; }
+tr{ height: 100px; cursor: pointer;}
+th { width: 100px; }
+tr:first-of-type{ height: 75px; cursor: default;}
+#product-info{width: fit-content;}
 
-td{
-    border-bottom: 1px solid #DDD;
-    border-collapse: collapse;
-}
+img{height: 100px; width: 140px; object-fit: cover;}
 
 th{
     color: white;
-    background-color: teal;
-}
-
-tr:nth-child(odd){
-    background-color: #EEE;
-    color: teal;
-}
-
-tr:nth-child(even) {
-    background-color: #FFF;
+    background-color: #6ba894;
 }
 
 th, td{
     text-align: left;
-    padding: 10px;
+    padding: 5px;
+}
+
+td{
+    border-bottom: 3px solid #DDD;
+    border-collapse: collapse;
 }
 
 table{
-    border: 1px solid #DDD;
-    border-bottom: 2px solid teal;
+    border-left: solid #DDD;
     border-collapse: collapse;
+}
+
+div{margin: 0px 100px 0px 100px; text-transform: capitalize;}
+.info-subtext{text-transform: none;}
+
+
+.info-subtext{
+    color: gray;
+}
+
+.selection:hover{
+    border-left: 3px solid rgb(29, 31, 29);
 }
