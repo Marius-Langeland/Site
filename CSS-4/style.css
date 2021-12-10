@@ -1,14 +1,14 @@
-.navbar{
+#navbar ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    border-top: 10px solid #FAB;
+    border-top: 5px solid rgb(255, 154, 154);
 }
 
-.navbar li {float: left}
+#navbar li {float: left}
 
-.navbar li a{
+#navbar li a{
     display: block;
     color: black;
     text-align: center;
@@ -16,10 +16,11 @@
     padding: 14px 16px;
 }
 
-.navbar li:hover {background-color: rgb(255, 233, 236);}
+#navbar {background-color: rgb(255, 221, 221);}
+#navbar li:hover:not(.active) {background-color: rgb(255, 233, 236);}
 
 .active{
-    background-color: #FAB;
+    background-color: rgb(255, 154, 154);
     color: #333;
 }
 
@@ -33,6 +34,8 @@ body #home-content {margin: auto 10px}
     padding-left: 15px;
 }
 
+.content {margin: 10px 10px}
+
 footer {
     margin-top: 75px;
     padding-bottom: 5px;
@@ -43,3 +46,19 @@ footer {
 #copyright{
     text-align: center;
 }
+
+#colors {color: white;}
+#colors td {width: 200px; height: 100px; text-align: center;}
+#colors tr:nth-child(1) td:nth-child(1) {background-color: brown;}
+#colors tr:nth-child(1) td:nth-child(2) {background-color: rgb(105, 100, 155);}
+#colors tr:nth-child(2) td:nth-child(1) {background-color: hsl(128, 80%, 25%)}
+#colors tr:nth-child(2) td:nth-child(2) {background-color: rgba(255, 0, 90, 1);}
+#colors tr:nth-child(3) td:nth-child(1) {background-color: #123456;}
+#colors tr:nth-child(3) td:nth-child(2) {background-color: hsla(50, 100%, 50%, 1);}
+
+#properties p:nth-of-type(1) {text-align: center;}
+#properties p:nth-of-type(2) {text-align: center;}
+#properties p:nth-of-type(3) {text-decoration: ;}
+#properties p:nth-of-type(4) {letter-spacing: 3px;}
+#properties p:nth-of-type(5) {direction:rtl;}
+#properties p:nth-of-type(6) {text-shadow: 1px 1px;}
