@@ -57,8 +57,18 @@ footer {
 #colors tr:nth-child(3) td:nth-child(2) {background-color: hsla(50, 100%, 50%, 1);}
 
 #properties p:nth-of-type(1) {text-align: center;}
-#properties p:nth-of-type(2) {text-align: center;}
-#properties p:nth-of-type(3) {text-decoration: ;}
+#properties p:nth-of-type(2) {text-decoration: overline;}
+#properties p:nth-of-type(3) {text-decoration: line-through;}
 #properties p:nth-of-type(4) {letter-spacing: 3px;}
 #properties p:nth-of-type(5) {direction:rtl;}
 #properties p:nth-of-type(6) {text-shadow: 1px 1px;}
+
+.box-model, .box-model div {display: inline-block;}
+.box-model div {margin: 15px 50px 30px;}
+#margin {background-color: salmon;}
+#border {background-color: sandybrown;}
+#padding {background-color: salmon;}
+#content {background-color: sandybrown;}
+
+.box-model p {text-align: center;}
+#content p:first-of-type {font-size: 40px; color: teal;}
