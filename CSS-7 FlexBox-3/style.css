@@ -1,0 +1,27 @@
+span{
+    background-color: salmon;
+    color: white;
+    margin: 5px 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 620px;
+    margin: 20px;
+    background-color: lightgray;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.container-1 span {padding: 30px;}
+.container-2 span {padding: 35px;}
+.container-3 span {padding: 50px;}
+.container-4 span {padding: 60px;}
