@@ -1,0 +1,55 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+
+div{display: flex; margin-bottom: 50px;}
+
+span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    user-select: none;
+    height: 40px;
+}
+
+.navbar-1 span:hover{
+    background-color: rgb(52, 87, 136);
+}
+.navbar-1 span{
+    margin-left: 10px;
+    padding: 0px 10px;
+}
+.navbar-1{
+    display: flex;
+    justify-content: right;
+    background-color: rgb(53, 141, 196);
+    color: white;
+}
+
+.navbar-2 span:hover{
+    background-color: rgb(143, 209, 143);
+}
+.navbar-2 span{
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+img{height: 20px; filter: invert(100%)}
+.navbar-3, .navbar-4{
+    background-color: rgb(197, 95, 95);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    flex-grow: 1;
+}
+
+.navbar-4 span, .navbar-3 span{
+    width: 100%;
+}
+
+.navbar-4 span:not(#image-cluster):hover, .navbar-3 span:hover{
+    background-color: salmon;
+}
