@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lato" sans-serif;
+    background: rgb(70, 87, 94);
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+.full-width {width: 100%}
+
+nav ul{
+    margin: 20px 0 0;
+    padding: 0px;
+    border-radius: 4px;
+    background: rgb(62, 61, 70);
+    overflow: hidden;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.active, nav ul li a:hover{
+    background: rgb(59, 119, 134);
+}
+
+.col-7{
+    width: 70%;
+    min-height: 400px;
+    float: left;
+}
+
+.col-3{
+    width: 28%;
+    min-height: 400px;
+    background: #f1f1f1;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    user-select: none;
+}
+.col-3 ul{
+margin-top: 0px;
+padding: 0px;
+}
+.col-3 ul li{
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+}
+.col-3 ul li:hover{
+    background: rgb(59, 119, 134);
+    color: #fff;
+}
+
+.margin-top-20px {margin-top: 20px;}
+
+img {max-width: 100%;}
+h1 {margin: 10px 0px;}
+.post{
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.footer-text{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width: 900px){
+    .container{
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    .col-7, .col-3{
+        width: 100%;
+        float: none;
+    }
+    .col-3 {margin-top: 20px;}
+}
