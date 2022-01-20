@@ -5,10 +5,10 @@ body, footer{
 
 body{
     flex-direction: column;
-    background: #202225;
+    background: #202124;
     color: #fff;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0px;
     margin: 0px;
     
@@ -22,13 +22,21 @@ body{
     align-items: center;
 }
 
+.header{
+    padding: 0px 10px;
+}
+
 .header span{
-    margin-right: 15px;
+    margin: 0px 10px;
 }
 
 .header-clickable{
     user-select: none;
     cursor: pointer;
+}
+.text-clickable:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .more-apps{
@@ -64,8 +72,17 @@ body{
 }
 
 .middle{
+    align-items: center;
+    justify-content:center;
+    flex-grow: 1;
+}
+.middle>div{
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    margin: 100px;
 }
 
 .hyperlink{
@@ -76,11 +93,56 @@ body{
     cursor: pointer;
 }
 
+.google-search, .feeling-lucky{
+    padding: 10px;
+    background: #303030;
+    border-radius: 6px;
+    margin: 0px 10px;
+}
 
+.google-search:hover, .feeling-lucky:hover{
+    text-decoration: none;
+    outline: 1px solid #777;
+}
 
+.search-parent{
+    justify-content: flex-start;
+    align-items: center;
 
+    padding: 12px 15px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    border: 1px solid #68696b;
+    border-radius: 1000px;
+}
 
+.search-parent:hover, .search-parent:focus-within{
+    background: #303134;
+    border: 1px solid #303134;
+}
 
+.search-parent img{
+    filter: invert(100%);
+    height: 15px;
+    margin: 5px 10px 5px 5px;
+}
+
+input{
+    color: white;
+    background: none;
+    border: none;
+    flex-grow: 1;
+    font-size: 110%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.select-language{
+    font-size: 80%;
+}
 
 footer span:hover{
     text-decoration: underline;
@@ -88,13 +150,47 @@ footer span:hover{
 }
 footer{
     flex-direction: column;
+    font-size: 80%;
+    color: #ddd;
 }
 
-.footer-right{
-    flex-grow: 1;
-    justify-content: flex-end;
+footer>div{
+    background: #191919;
+    margin-top: 2px;
+    padding: 0px 30px;
+}
+footer .country span{
+    margin: 20px 0px;
+}
+footer .footer-container span{
+    margin: 20px 0px;
 }
 
-.footer-left *, span{
-    margin: 0px 20px;
+.footer-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container div span{
+    padding: 0px 10px;
+}
+
+
+@media (max-width: 1300px){
+    .footer-container{
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .footer-container div{
+        flex-grow: 1;
+        justify-content: center;
+        padding: 0% 5%;
+    }
+}
+
+@media (max-width: 850px){
+    .footer-container{
+        flex-direction: column;
+    }
 }
