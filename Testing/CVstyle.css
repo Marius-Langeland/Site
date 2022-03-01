@@ -8,7 +8,7 @@ h1{text-align: center;}
 .time, .description{float:left;}
 
 .time{
-    width: var(--grid-column-span-1);
+    width: var(--grid-column-span-2);
     margin-right: var(--grid-margin-span-1);
     height: 2em;
     text-align: end;
