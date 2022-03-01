@@ -1,0 +1,20 @@
+h1, h2, h3, p{margin: 0; padding: 0;}
+h1{text-align: center;}
+
+.cv-block{margin-left: var(--grid-margin-span-1); clear: left;}
+
+.underline{height: 1px; background: black;}
+
+.time, .description{float:left;}
+
+.time{
+    width: var(--grid-column-span-1);
+    margin-right: var(--grid-margin-span-1);
+    height: 2em;
+    text-align: end;
+    clear: left;
+}
+.description{
+    margin-left: var(--grid-spacing);
+    width: var(--grid-column-span-4);
+}
