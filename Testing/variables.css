@@ -10,7 +10,7 @@
 
     --top-height: 6em;
     --grid-spacing: 0.6em;
-    --grid-column: calc((100vw - var(--grid-spacing) * 9) / 8);
+    --grid-column: calc((100% - var(--grid-spacing) * 9) / 8);
     --grid-spacing-column: calc(var(--grid-column) + var(--grid-spacing));
     --grid-column-span-1: calc(var(--grid-spacing-column) * 1 - var(--grid-spacing));
     --grid-column-span-2: calc(var(--grid-spacing-column) * 2 - var(--grid-spacing));
@@ -34,4 +34,4 @@
 
 }
 
-.grid-margin{margin: 0 var(--grid-spacing);}
+.grid-margin_DISABLED{margin: 0 var(--grid-spacing);}
