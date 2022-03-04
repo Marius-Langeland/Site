@@ -3,7 +3,7 @@ h1{text-align: center; margin-bottom: 2em;}
 
 .cv-block{clear: left;}
 
-h2{margin-left: calc(var(--grid-spacing) + var(--grid-margin-span-1));}
+h2{margin-left: calc(var(--grid-spacing) + var(--grid-margin-span-1)); text-align: right; width: var(--grid-column-span-1);}
 span{margin-left: var(--grid-spacing);}
 
 .underline{height: 1px; background: black; margin-left: var(--grid-margin-span-1);}
