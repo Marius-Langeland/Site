@@ -1,0 +1,9 @@
+#footer-grid{
+    color: var(--clr-primary-400);
+    display: grid;
+    text-align: left;
+    margin: 1em 0 1em 2em;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
