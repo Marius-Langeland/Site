@@ -1,0 +1,16 @@
+:root{
+    --clr-primary-200: #348888;
+    --clr-primary-400: #9EF8EE;
+
+    --clr-neutral-100: #348888;
+    --clr-neutral-900: #222c2a;
+
+    --ff-primary: "Roboto", sans-serif;
+    --ff-accent: "Playfair Display", sans-serif;
+
+    --top-height: 6em;
+    --grid-spacing: .6em;
+
+    --br-1: 720px;
+    --br-2: 960px;
+}
