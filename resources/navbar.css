@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+}
+
+.navbar-items{
+    color: var(--clr-light-100);
+    font-size: 1.7em;
+
+    height: 100%;
+
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.navbar-items a{
+    all:unset;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 .1em;
+}
+
+.navbar-items a:hover{
+    color: var(--clr-light-200);
+}

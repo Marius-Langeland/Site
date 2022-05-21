@@ -21,7 +21,10 @@ body{
 #navbar{
     grid-area: navbar;
 }
-
+#intro{
+    text-align: center;
+    color: var(--clr-light-200);
+}
 #sidebar{
     grid-area: sidebar;
     background-color: var(--clr-dark);
@@ -32,12 +35,18 @@ body{
     background: var(--clr-neutral-900);
 }
 
+.menu-icon{
+    grid-area: navbar;
+    height: 10px;
+    width: 10px;
+}
+
 @media screen and (min-width: 760px){
     .site{
         grid-template-columns: 6em 4fr;
         grid-template-rows: min-content auto;
         grid-template-areas: 
-            "navbar navbar"
+            "empty navbar"
             "sidebar main";
     }
 }

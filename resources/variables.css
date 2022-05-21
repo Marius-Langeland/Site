@@ -1,6 +1,9 @@
 :root{
     --clr-primary-200: #348888;
     --clr-primary-400: #9EF8EE;
+    --clr-light-100: #f1ece8;
+    --clr-light-200: #d8c8be;
+    --clr-dark: #10101f;
 
     --clr-neutral-100: #348888;
     --clr-neutral-900: #222c2a;
