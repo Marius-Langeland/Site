@@ -14,7 +14,13 @@ body{
         "footer";
 }
 
+#navbar{
+    grid-area: navbar;
+}
 
+#navbar>*{
+    display: none;
+}
 
 @media screen and (min-width: 760px){
     .site{
