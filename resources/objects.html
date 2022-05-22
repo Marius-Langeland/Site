@@ -1,6 +1,54 @@
-<div id="menu-icon" data->
-    dwasd
+<div class="menu-icon">
     <div class="menu-icon-top"></div>
     <div class="menu-icon-middle"></div>
     <div class="menu-icon-bottom"></div>
+
+    <style>
+        .menu-icon{
+            display: flex;
+            justify-content: space-between;
+            width: 1fr;
+            height: 1fr;
+            background-color: red;
+        }
+
+        .menu-icon div{
+            height: calc(1fr - 1px);
+        }
+    </style>
+</div>
+
+<div class="navbar">
+    <a href="index.html" id="home">Home</a>
+    <a href="portfolio.html" id="portfolio">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    
+    <style>
+        .navbar{
+            display: flex;
+        }
+        
+        .navbar{
+            color: var(--clr-light-100);
+            font-size: 1.7em;
+            height: 3em;
+            
+            justify-content: space-around;
+            align-items: flex-end;
+            text-align: center;
+        }
+        
+        .navbar a{
+            all:unset;
+            user-select: none;
+            cursor: pointer;
+            margin: 0 .1em;
+        }
+        
+        .navbar a:hover{
+            color: var(--clr-light-200);
+        }
+    
+    </style>
 </div>

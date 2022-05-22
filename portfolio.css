@@ -6,7 +6,7 @@ body{
     display: grid;
     min-height: 100vh;
     background: var(--clr-dark);
-    grid-template-rows: min-content min-content auto min-content;
+    grid-template-rows: min-content auto auto min-content;
     grid-template-areas: 
         "navbar"
         "sidebar"
@@ -16,7 +16,7 @@ body{
 
 #content{
     grid-area: main;
-    background-color: var(--clr-light-200);
+    background-color: var(--clr-light-100);
 }
 #navbar{
     grid-area: navbar;
@@ -24,7 +24,7 @@ body{
 
 #sidebar{
     grid-area: sidebar;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light-200);
 }
 
 #footer{
@@ -39,5 +39,9 @@ body{
         grid-template-areas: 
             "navbar navbar"
             "sidebar main";
+    }
+    .navbar{
+        display: flex;
+        justify-content: left;
     }
 }

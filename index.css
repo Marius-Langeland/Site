@@ -5,7 +5,7 @@ body{
 .site{
     display: grid;
     min-height: 100vh;
-    background: var(--clr-dark);
+    background: var(--clr-light-100);
     grid-template-rows: min-content min-content auto min-content;
     grid-template-areas: 
         "navbar"
@@ -14,39 +14,14 @@ body{
         "footer";
 }
 
-#content{
-    grid-area: main;
-    background-color: var(--clr-light-200);
-}
-#navbar{
-    grid-area: navbar;
-}
-#intro{
-    text-align: center;
-    color: var(--clr-light-200);
-}
-#sidebar{
-    grid-area: sidebar;
-    background-color: var(--clr-dark);
-}
 
-#footer{
-    grid-area: footer;
-    background: var(--clr-neutral-900);
-}
-
-.menu-icon{
-    grid-area: navbar;
-    height: 10px;
-    width: 10px;
-}
 
 @media screen and (min-width: 760px){
     .site{
         grid-template-columns: 6em 4fr;
         grid-template-rows: min-content auto;
         grid-template-areas: 
-            "empty navbar"
+            "navbar navbar"
             "sidebar main";
     }
 }
