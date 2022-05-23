@@ -6,4 +6,8 @@ $(function(){
             $(obj).append(h);
         });
     });
+
+    $('.sidebar-toggle').click(function(){
+        $('.site').toggleClass('site-sidebar-close');
+    });
 });

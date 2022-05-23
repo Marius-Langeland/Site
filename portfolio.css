@@ -1,25 +1,37 @@
 body{
     margin: 0;
+    padding: 0;
     background: var(--clr-dark);
+}
+
+.container{
+    display: flex;
 }
 
 .site{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: min-content auto auto min-content;
+    grid-template-rows: min-content auto auto 2px;
     grid-template-areas: 
+        "navbar"
         "sidebar"
-        "main";
+        "main"
+        "footer";
 }
 
 #content{
     grid-area: main;
     background-color: var(--clr-light-100);
 }
+#navbar {grid-area: navbar;}
+#footer {
+    grid-area: footer;
+    background-color: var(--clr-dark);
+}
 
-#sidebar{
-    grid-area: sidebar;
-    background-color: var(--clr-light-200);
+#content iframe{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -29,32 +41,55 @@ body{
     height: 20px;
     border-radius: 15px 10px;
     border: 2px solid var(--clr-light-100);
-    display: none;
 }
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-area: sidebar;
+    background-color: var(--clr-dark);
+    color: var(--clr-light-100);
+}
+#sidebar>div{
+    padding: 2em;
+}
+
+.sidebar-toggle{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: var(--clr-dark);
+    grid-column: 2;
+    grid-row: 2;
+    border-end-end-radius: 100px;
+}
+
 
 @media screen and (min-width: 760px){
     .site{
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: min-content auto;
+        grid-template-columns: 30% auto;
+        grid-template-rows: min-content auto 2px;
         grid-template-areas: 
-            "navbar navbar"
-            "sidebar main";
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+        
+        transition: all .5s ease;
     }
-    .navbar{
-        display: flex;
-        justify-content: left;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 760px){
     
-}
-
-@media screen and (max-width: 600px) {
-    #navbar .navbar{
-        visibility: hidden;
+    .site-sidebar-close{
+        grid-template-columns: 0 auto;
     }
-    [data-object="menu-icon"]{
-        display: block;
+
+    .sidebar-toggle{display: inline;}
+    
+    #sidebar{
+        grid-column: 1;
+        grid-row: 2 / -2;
+    }
+    #content{
+        grid-column: 1 / -1;
+        grid-row: 2 / -2;
     }
 }
