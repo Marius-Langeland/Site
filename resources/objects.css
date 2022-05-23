@@ -1,3 +1,4 @@
+/*#region menu icon*/
 .menu-icon{
     display: flex;
     height: 2em;
@@ -18,9 +19,10 @@
 
 .menu-icon div{
     border-radius: 30px;
-    height: 20%;
+    height: 15%;
     background-color: var(--clr-light-100);
 }
+/*#endregion*/
 
 .project-container{
     margin: 2em;
