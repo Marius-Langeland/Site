@@ -1,0 +1,23 @@
+.menu-icon{
+    display: flex;
+    height: 2em;
+    width: 2em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px;
+}
+
+.menu-icon-middle{
+    width: 100%;
+}
+.menu-icon-top, .menu-icon-bottom{
+    width: 100%;
+}
+
+.menu-icon div{
+    border-radius: 30px;
+    height: 20%;
+    background-color: var(--clr-light-100);
+}

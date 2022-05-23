@@ -17,6 +17,14 @@ body{
         "sidebar"
         "main"
         "footer";
+
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+}
+.site-sidebar-close{
+    grid-template-rows: min-content 0px auto 2px;
 }
 
 #content{
@@ -34,14 +42,6 @@ body{
     height: 100%;
 }
 
-[data-object="menu-icon"]{
-    padding: 8px;
-    width: 40px;
-    height: 20px;
-    border-radius: 15px 10px;
-    border: 2px solid var(--clr-light-100);
-}
-
 #sidebar{
     display: flex;
     flex-direction: column;
@@ -56,12 +56,12 @@ body{
 
 .sidebar-toggle{
     display: none;
-    width: 40px;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
     background-color: var(--clr-dark);
     grid-column: 2;
     grid-row: 2;
-    border-end-end-radius: 100px;
+    border-end-end-radius: 10px;
 }
 
 @media screen and (min-width: 760px){
@@ -72,15 +72,15 @@ body{
         "navbar navbar"
         "sidebar main"
         "footer footer";
-        
-        transition: all .5s ease;
     }
     
     .site-sidebar-close{
-        grid-template-columns: 0 auto;
+        grid-template-columns: 0px auto;
     }
 
-    .sidebar-toggle{display: inline;}
+    .sidebar-toggle{
+        display: block;
+    }
     
     #sidebar{
         grid-column: 1;
