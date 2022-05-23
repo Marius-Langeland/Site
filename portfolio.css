@@ -34,7 +34,6 @@ body{
     height: 100%;
 }
 
-
 [data-object="menu-icon"]{
     padding: 8px;
     width: 40px;
@@ -64,7 +63,6 @@ body{
     grid-row: 2;
     border-end-end-radius: 100px;
 }
-
 
 @media screen and (min-width: 760px){
     .site{
