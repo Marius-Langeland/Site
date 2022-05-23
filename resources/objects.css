@@ -21,3 +21,12 @@
     height: 20%;
     background-color: var(--clr-light-100);
 }
+
+.project-container{
+    margin: 2em;
+    background-color: rgb(52, 42, 63);
+    height: 130px;
+}
+.project-container h3{
+    padding: 5px 1em;
+}
