@@ -16,12 +16,10 @@ $(function(){
         $.get(`${data}`, get =>{
             let title = $(get).find("#title").text();
             let bg = $(get).find("#background").attr("src");
-            bg = bg == undefined ? "" : bg;
             let desc = $(get).find("#desc").text();
             let node = `<h3>${title}</h3>
-                        <img src="${bg}">
+                        <img src="${data.substring(0, data.lastIndexOf("/")+1) + bg}" alt="">
                         <p>${desc}</p>`;
-            
             $(obj).append(node);
         });
 
