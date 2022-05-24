@@ -41,7 +41,7 @@
 .navbar{
     color: var(--clr-contrast);
     font-size: calc(1vw + .8em);
-    height: 3em;
+    height: calc(1em + 4vh);
     
     justify-content: space-around;
     align-items: flex-end;
