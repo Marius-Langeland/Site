@@ -1,3 +1,6 @@
+var counter = 0;
+
+
 $(function(){
     $.get("resources/objects.html", data => {
         $("[data-object]").each((index, obj) => {
@@ -25,7 +28,10 @@ $(function(){
 
         $(obj).click(function(){
             $("iframe").attr("src", `${data}`);
-            //$(".site").addClass("site-sidebar-close")
+            if(counter == 0){
+                $(".site").addClass("site-sidebar-close")
+                counter++;
+            }
         });
     });
 });

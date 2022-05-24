@@ -10,7 +10,7 @@ body{
 .site{
     display: grid;
     height: 99vh;
-    grid-template-rows: min-content 356px auto;
+    grid-template-rows: min-content 446px auto;
     grid-template-areas: 
         "navbar"
         "sidebar"
@@ -94,8 +94,8 @@ body{
 
 @media screen and (min-width: 760px){
     .site{
-        grid-template-columns: 400px auto;
-        grid-template-rows: min-content 80% auto;
+        grid-template-columns: 435px auto;
+        grid-template-rows: min-content calc(200px + 35%) auto;
         grid-template-areas: 
         "navbar navbar"
         "sidebar main";
