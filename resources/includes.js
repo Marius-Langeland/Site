@@ -14,8 +14,7 @@ $(function(){
     $("[data-link]").each((index, obj) =>{
         let data = $(obj).data("link");
         $.get(`projects/${data}`, get =>{
-            var x = $("html").find("#");
-            alert(x);
+            var x = $(obj);
 
             obj.append(`
                 <h3>${title}</h3>
