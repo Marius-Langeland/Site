@@ -1,6 +1,5 @@
 var counter = 0;
 
-
 $(function(){
     $.get("resources/objects.html", data => {
         $("[data-object]").each((index, obj) => {
