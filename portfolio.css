@@ -64,7 +64,7 @@ body{
 }
 
 #sidebar a{
-    all:unset;
+    all: unset;
     user-select: none;
     cursor: pointer;
     margin: 0 .1em;
