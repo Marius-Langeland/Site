@@ -30,7 +30,7 @@
 }
 
 .navbar{
-    color: var(--clr-contrast);
+    color: var(--clr-primary);
     font-size: calc(1vw + .8em);
     height: calc(1em + 4vh);
     
@@ -47,6 +47,6 @@
 }
 
 .navbar a:hover{
-    color: var(--clr-contrast);
+    color: var(--clr-primary-900);
 }
 /*#endregion*/

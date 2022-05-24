@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.site{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#navbar{
+    grid-column: 1 / -1;
+}
+
+#name{
+    grid-column: 5/-5;
+    justify-self: center;
+    margin-top: 4em;
+}
+
+#intro{
+    margin-top: 3em;
+    grid-column: 3/-3;
+}
