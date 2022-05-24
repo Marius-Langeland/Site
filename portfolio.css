@@ -10,7 +10,7 @@ body{
 .site{
     display: grid;
     height: 99vh;
-    grid-template-rows: min-content 356px auto 0px;
+    grid-template-rows: min-content 356px auto;
     grid-template-areas: 
         "navbar"
         "sidebar"
@@ -19,7 +19,7 @@ body{
     transition: all .5s ease;
 }
 .site-sidebar-close{
-    grid-template-rows: min-content 0px 1fr 2px;
+    grid-template-rows: min-content 0px 1fr;
 }
 
 /*#region Main Content*/
