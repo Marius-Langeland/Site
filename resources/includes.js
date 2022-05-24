@@ -10,4 +10,8 @@ $(function(){
     $('.sidebar-toggle').click(function(){
         $('.site').toggleClass('site-sidebar-close');
     });
+
+    $("[data-link]").each((index, obj) =>{
+        
+    });
 });
