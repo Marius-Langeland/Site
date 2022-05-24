@@ -18,14 +18,14 @@ $(function(){
             let bg = $(get).find("#background").attr("src");
             let desc = $(get).find("#desc").text();
             let node = `<h3>${title}</h3>
-                        <img src="${data.substring(0, data.lastIndexOf("/")+1) + bg}" alt="">
+                        <img src="${data.substring(0, data.lastIndexOf("/")+1) + bg}" alt=" ">
                         <p>${desc}</p>`;
             $(obj).append(node);
         });
 
         $(obj).click(function(){
             $("iframe").attr("src", `${data}`);
-            $(".site").addClass("site-sidebar-close")
+            //$(".site").addClass("site-sidebar-close")
         });
     });
 });
