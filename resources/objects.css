@@ -24,14 +24,7 @@
 }
 /*#endregion*/
 
-.project-container{
-    margin: 2em;
-    background-color: var(--clr-primary-100);
-    height: 130px;
-}
-.project-container h5{
-    padding: 5px 1em;
-}
+
 
 /*#region Navbar*/
 .navbar{

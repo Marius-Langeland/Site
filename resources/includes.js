@@ -13,14 +13,20 @@ $(function(){
 
     $("[data-link]").each((index, obj) =>{
         let data = $(obj).data("link");
-        $.get(`projects/${data}`, get =>{
-            var x = $(obj);
+        $.get(`${data}`, get =>{
+            let title = $(get).find("#title").text();
+            let bg = $(get).find("#background").attr("src");
+            let desc = $(get).find("#desc").text();
+            let node = `<h3>${title}</h3>
+                        <img src="${bg}">
+                        <p>${desc}</p>`
 
-            obj.append(`
-                <h3>${title}</h3>
-                ${background}
-                <p>${text}</p>
-            `);
+            $(obj).append(node);
+        });
+
+        $(obj).click(function(){
+            $("iframe").attr("src", `${data}`);
+            $(".site").addClass("site-sidebar-close")
         });
     });
 });
