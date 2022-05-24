@@ -1,14 +1,7 @@
 :root{
-    --clr-primary-200: #348888;
-    --clr-primary-400: #9EF8EE;
-    --clr-light-100: #f1ece8;
-    --clr-light-200: #d8c8be;
-    --clr-dark: #10101f;
-
-    --clr-text-nav: #9b97d2;
-
-    --clr-neutral-100: #348888;
-    --clr-neutral-900: #222c2a;
+    --clr-contrast: #FFF4E0;
+    --clr-primary: #221e30;
+    --clr-primary-100: #3e3a47;
 
     --ff-primary: "Roboto", sans-serif;
     --ff-accent: "Playfair Display", sans-serif;

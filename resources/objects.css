@@ -20,15 +20,42 @@
 .menu-icon div{
     border-radius: 30px;
     height: 15%;
-    background-color: var(--clr-light-100);
+    background-color: var(--clr-contrast);
 }
 /*#endregion*/
 
 .project-container{
     margin: 2em;
-    background-color: rgb(52, 42, 63);
+    background-color: var(--clr-primary-100);
     height: 130px;
 }
 .project-container h5{
     padding: 5px 1em;
 }
+
+/*#region Navbar*/
+.navbar{
+    display: flex;
+}
+
+.navbar{
+    color: var(--clr-contrast);
+    font-size: calc(1vw + .8em);
+    height: 3em;
+    
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.navbar a{
+    all:unset;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 .1em;
+}
+
+.navbar a:hover{
+    color: var(--clr-contrast);
+}
+/*#endregion*/
