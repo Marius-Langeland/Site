@@ -1,7 +1,8 @@
 var counter = 0;
 
 $(function(){
-    $.get("resources/objects.html", data => {
+
+    $.get("../resources/objects.html", data => {
         $("[data-object]").each((index, obj) => {
             let object = $(obj).data("object");
             let h = $(data).filter(`.${object}`);

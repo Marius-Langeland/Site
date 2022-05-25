@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+.hero, .navbar{
+    background-color: var(--clr-primary);
+    color: var(--clr-contrast);
+}
+
+.hero{
+    height: 100vh;
+}
+
+#content{
+    height: 50em;
+}
