@@ -23,7 +23,7 @@ $(function(){
                         <p>${desc}</p>`;
             $(obj).append(node)
             let folder = data.substring(0, data.lastIndexOf("/")+1);
-            bg = bg.includes("www") ? bg : folder + bg;
+            bg = bg.includes("http") ? bg : folder + bg;
             $(obj).css("background-image", `url("${bg}")`);
         });
 
