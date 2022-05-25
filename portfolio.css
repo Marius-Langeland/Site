@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .container{
     display: flex;
 }
@@ -16,7 +20,7 @@ body{
         "sidebar"
         "main";
 
-    transition: all .5s ease;
+    transition: all .8s ease;
 }
 .site-sidebar-close{
     grid-template-rows: min-content 0px 1fr;
@@ -71,6 +75,7 @@ body{
     justify-content: center;
     user-select: none;
     height: 130px;
+    background-position: 100% 0%;
 }
 .project-container h3{
     white-space: nowrap;
