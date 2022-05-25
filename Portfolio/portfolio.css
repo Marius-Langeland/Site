@@ -92,7 +92,7 @@ body{
 @media screen and (min-width: 760px){
     .site{
         grid-template-columns: 435px auto;
-        grid-template-rows: min-content calc(100px + 35%) auto;
+        grid-template-rows: min-content 80% auto;
         grid-template-areas: 
         "navbar navbar"
         "sidebar main";
