@@ -51,10 +51,10 @@ body{
     color: var(--clr-contrast);
 }
 #sidebar>div{
-    margin: 2em 0;
+    margin: 1em;
     overflow: auto;
     background-color: var(--clr-primary);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .sidebar-toggle{
@@ -66,24 +66,19 @@ body{
     border-end-end-radius: 10px;
 }
 
-#sidebar a{
-    all: unset;
-    user-select: none;
-    cursor: pointer;
-    margin: 0 .1em;
-}
-
 .project-container{
-    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
     user-select: none;
-    flex-flow: column;
-    background-color: var(--clr-primary-100);
     height: 130px;
 }
 .project-container h3{
+    white-space: nowrap;
+    font-size: 1.3em;
+    align-self: center;
     padding: 0 1em;
     display: inline;
-    background-color: rgba(0, 0, 0, 0.09);
+    background-color: rgba(0, 0, 0, 0.307);
     border-radius: 5px;
 }
 
@@ -92,7 +87,7 @@ body{
 @media screen and (min-width: 760px){
     .site{
         grid-template-columns: 435px auto;
-        grid-template-rows: min-content calc(200px + 35%) auto;
+        grid-template-rows: min-content calc(100px + 35%) auto;
         grid-template-areas: 
         "navbar navbar"
         "sidebar main";
