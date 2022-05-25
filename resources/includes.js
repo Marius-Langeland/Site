@@ -15,6 +15,7 @@ $(function(){
 
     $("[data-link]").each((index, obj) =>{
         let data = $(obj).data("link");
+        let bg_pos = $(obj).data("position");
         $.get(`${data}`, get =>{
             let title = $(get).find("#title").text();
             let bg = $(get).find("#background").attr("src");
@@ -25,6 +26,8 @@ $(function(){
             let folder = data.substring(0, data.lastIndexOf("/")+1);
             bg = bg.includes("http") ? bg : folder + bg;
             $(obj).css("background-image", `url("${bg}")`);
+            if(bg_pos != undefined)
+                $(obj).css("background-position", bg_pos);
         });
 
         $(obj).click(function(){
