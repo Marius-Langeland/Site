@@ -22,7 +22,9 @@ $(function(){
             let node = `<h3>${title}</h3>
                         <p>${desc}</p>`;
             $(obj).append(node)
-            $(obj).css("background-image", `url("${data.substring(0, data.lastIndexOf("/")+1) + bg}")`);
+            let folder = data.substring(0, data.lastIndexOf("/")+1);
+            bg = bg.includes("www") ? bg : folder + bg;
+            $(obj).css("background-image", `url("${bg}")`);
         });
 
         $(obj).click(function(){
