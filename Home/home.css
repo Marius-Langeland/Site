@@ -1,6 +1,7 @@
 body {margin: 0;}
 .hero{
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -34,4 +35,10 @@ body {margin: 0;}
 .portfolio {background-color: var(--clr-primary);}
 
 .content{
+}
+
+@media screen and (min-width: 660px){
+    .hero{
+        flex-direction: row;
+    }
 }
