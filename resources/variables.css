@@ -1,5 +1,7 @@
 :root{
     --clr-contrast: #FFF4E0;
+    --clr-contrast-100: #d5ccbb;
+    --clr-contrast-200: #b0aa9f;
     --clr-primary: #221e30;
     --clr-primary-100: #3e3a47;
     --clr-primary-900: #b2d6d6;

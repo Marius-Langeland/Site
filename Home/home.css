@@ -1,16 +1,37 @@
-body{
-    margin: 0;
-}
-
-.hero, .navbar{
-    background-color: var(--clr-primary);
-    color: var(--clr-contrast);
-}
-
+body {margin: 0;}
 .hero{
+    display: flex;
     height: 100vh;
 }
 
-#content{
-    height: 50em;
+.hero>div{
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--clr-contrast);
+
+    transition: flex-grow .4s ease;
+}
+
+.hero>div a{
+    all: unset;
+}
+
+.hero span{
+    font-size: 2em;
+}
+
+.hero>div:hover{
+    flex-grow: 1.7;
+}
+
+.contact {background-color: var(--clr-primary);}
+.about {background-color: var(--clr-primary-100);}
+.portfolio {background-color: var(--clr-primary);}
+
+.content{
 }

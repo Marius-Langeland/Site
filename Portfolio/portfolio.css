@@ -14,7 +14,7 @@ body{
 .site{
     display: grid;
     height: 99vh;
-    grid-template-rows: min-content 446px auto;
+    grid-template-rows: min-content 320px auto;
     grid-template-areas: 
         "navbar"
         "sidebar"
