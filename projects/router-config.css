@@ -66,25 +66,34 @@ hr{width: 100%;}
     border-radius: 1.4em;
 }
 
+
+
 #steps{
     grid-area: steps;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 1em;
 }
-
 #steps>div{
     --rad: .3em;
     --col: #b2b2b2;
-    width: 100%;
     border: 1px solid var(--col);
     border-radius: var(--rad);
-    margin: var(--rad);
+    margin: 0 var(--rad) var(--rad) 0;
     box-shadow: var(--rad) var(--rad) var(--col);
-}
 
-@media screen and (min-width: 760px){
-    #steps>div{
-        width: 45%;
-    }
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+#steps>div>p{
+    padding: 1em;
+}
+#steps img {
+
+}
+#steps #default-access div{
+    margin: 1em;
+    padding: 1em;
+    background-color: #b2b2b2;
 }
