@@ -1,60 +1,90 @@
-body {margin: 0;}
+body, p {margin: 0; padding: 0;}
 #background {display: none;}
+hr{width: 100%;}
+
 
 .site{
-    height: 100vh;
     display: grid;
 
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 0 1fr 0;
+    grid-template-rows: 0 repeat(3, auto);
+    grid-gap: 1em;
+
+    grid-template-areas: 
+        ". . ."
+        ". t ."
+        ". i ."
+        ". s ."
+        ". steps .";
 }
 
-#table-of-content{
-    grid-column: -3 / -1;
-    grid-row: 1 / 4;
-    border-width: 1px 0 1px 1px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 2em 0 0 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-    background-color: var(--clr-primary);
-    color: var(--clr-contrast);
-}
-#table-of-content li{
-    font-size: calc(2vw + .3em);
-}
+
 
 #title{
     text-align: center;
-    grid-column: 2 / -4;
+    grid-area: t;
 }
 
-#intro{
-    grid-column: 2 / -4;
+
+
+#table-of-content{
+    display: flex;
+    flex-flow: column;
+    border-radius: 1em;
+    align-items: left;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 2em;
+    
+    grid-area: s;
+}
+#table-of-content li{
+    margin: 0;
+    padding: 0;
+}
+
+
+#introduction{
+    display: flex;
+    grid-area: i;
+
+    flex-direction: column;
+}
+#introduction>p{
     text-align: center;
     font-size: larger;
 }
-
+#introduction>span{
+    text-align: center;
+    margin: 1em;
+}
 #specs{
-    grid-column: 2 / -4;
-    border-bottom: 1px solid black;
     font-size: small;
+    border-spacing: 0;
+    padding: .5em .8em;
+    border-radius: 1.4em;
 }
 
-#specs tr:first-of-type td{
-    border-bottom: 2px solid black;
+#steps{
+    grid-area: steps;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-#specs tr:not(:first-of-type){
-    background-color: var(--clr-primary);
-    color: var(--clr-contrast);
+#steps>div{
+    --rad: .3em;
+    --col: #b2b2b2;
+    width: 100%;
+    border: 1px solid var(--col);
+    border-radius: var(--rad);
+    margin: var(--rad);
+    box-shadow: var(--rad) var(--rad) var(--col);
 }
 
-@media sceen and (min-width: 760px){
-
+@media screen and (min-width: 760px){
+    #steps>div{
+        width: 45%;
+    }
 }
