@@ -69,10 +69,11 @@ hr{width: 100%;}
 
 
 #steps{
+    margin: 0 5vw;
     grid-area: steps;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+    grid-gap: 5vw 5em;
 }
 #steps>div{
     --rad: .3em;
