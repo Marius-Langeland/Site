@@ -72,7 +72,7 @@ hr{width: 100%;}
     margin: 0 5vw;
     grid-area: steps;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
     grid-gap: 5vw 5em;
 }
 #steps>div{
@@ -90,11 +90,31 @@ hr{width: 100%;}
 #steps>div>p{
     padding: 1em;
 }
-#steps img {
-
-}
 #steps #default-access div{
     margin: 1em;
     padding: 1em;
     background-color: #b2b2b2;
 }
+
+@media screen and (min-width: 790px) {
+    #step-finished, #step-0{
+        grid-column: span 2;
+    }
+    #default-access{
+        grid-column: 2;
+    }
+
+    .site{
+        display: grid;
+    
+        grid-template-columns: 0 1fr 0;
+        grid-template-rows: 0 repeat(3, auto);
+    
+        grid-template-areas: 
+            ". .        ctable"
+            ". title    ."
+            ". info     ."
+            ". steps    .";
+    }
+}
+
