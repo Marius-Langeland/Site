@@ -14,7 +14,6 @@ hr{width: 100%;}
         ". .        ."
         ". title    ."
         ". info     ."
-        ". ctable   ."
         ". steps    .";
 }
 
@@ -25,24 +24,6 @@ hr{width: 100%;}
     grid-area: title;
 }
 
-
-
-#table-of-content{
-    display: flex;
-    flex-flow: column;
-    border-radius: 1em;
-    align-items: left;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    margin: 0 2em;
-    
-    grid-area: ctable;
-}
-#table-of-content li{
-    margin: 0;
-    padding: 0;
-}
 
 
 #introduction{
@@ -57,16 +38,22 @@ hr{width: 100%;}
 }
 #introduction>span{
     text-align: center;
+    margin-top: 1em;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+#specs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+#specs span{
+    width: 200px;
     margin: 1em;
 }
-#specs{
-    font-size: small;
-    border-spacing: 0;
-    padding: .5em .8em;
-    border-radius: 1.4em;
-}
-
-
+#detail{font-size: small; font-style: italic;}
 
 #steps{
     margin: 0 5vw;
@@ -87,6 +74,7 @@ hr{width: 100%;}
     overflow: hidden;
     flex-direction: column;
 }
+
 #steps>div>p{
     padding: 1em;
 }
@@ -96,25 +84,18 @@ hr{width: 100%;}
     background-color: #b2b2b2;
 }
 
+footer{
+    margin-top: 3em;
+    height: 8em;
+    background-color: var(--clr-primary);
+}
+
 @media screen and (min-width: 790px) {
     #step-finished, #step-0{
         grid-column: span 2;
     }
     #default-access{
-        grid-column: 2;
-    }
-
-    .site{
-        display: grid;
-    
-        grid-template-columns: 0 1fr 0;
-        grid-template-rows: 0 repeat(3, auto);
-    
-        grid-template-areas: 
-            ". .        ctable"
-            ". title    ."
-            ". info     ."
-            ". steps    .";
+        grid-column: span 2;
     }
 }
 
