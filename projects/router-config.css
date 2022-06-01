@@ -11,18 +11,18 @@ hr{width: 100%;}
     grid-gap: 1em;
 
     grid-template-areas: 
-        ". . ."
-        ". t ."
-        ". i ."
-        ". s ."
-        ". steps .";
+        ". .        ."
+        ". title    ."
+        ". info     ."
+        ". ctable   ."
+        ". steps    .";
 }
 
 
 
 #title{
     text-align: center;
-    grid-area: t;
+    grid-area: title;
 }
 
 
@@ -37,7 +37,7 @@ hr{width: 100%;}
     padding: 0;
     margin: 0 2em;
     
-    grid-area: s;
+    grid-area: ctable;
 }
 #table-of-content li{
     margin: 0;
@@ -47,7 +47,7 @@ hr{width: 100%;}
 
 #introduction{
     display: flex;
-    grid-area: i;
+    grid-area: info;
 
     flex-direction: column;
 }

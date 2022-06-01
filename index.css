@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+.site{
+    display: grid;
+    min-height: 100vh;
+    background: var(--clr-light-100);
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas: 
+        "navbar"
+        "sidebar"
+        "main"
+        "footer";
+}
+
+#navbar{
+    grid-area: navbar;
+}
+
+
+@media screen and (min-width: 760px){
+    .site{
+        grid-template-columns: 6em 4fr;
+        grid-template-rows: min-content auto;
+        grid-template-areas: 
+            "navbar navbar"
+            "sidebar main";
+    }
+}
