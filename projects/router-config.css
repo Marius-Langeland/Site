@@ -71,6 +71,7 @@ hr{width: 100%;}
     display: flex;
     overflow: hidden;
     flex-direction: column;
+    justify-content: end;
 }
 
 #steps>div>p{
@@ -83,6 +84,7 @@ hr{width: 100%;}
     width: fit-content;
     white-space: nowrap;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: center;
 }
 
 footer{
