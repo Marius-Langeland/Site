@@ -78,8 +78,11 @@ hr{width: 100%;}
 }
 #steps #default-access div{
     margin: 1em;
-    padding: 1em;
+    padding: .3em .7em;
     background-color: #b2b2b2;
+    width: fit-content;
+    white-space: nowrap;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer{
@@ -88,12 +91,13 @@ footer{
 }
 
 @media screen and (min-width: 790px) {
-    #step-finished, #step-0, #default-access{
-        grid-column: span 2;
-    }
     #steps{
         margin: 2em 5em;
         grid-gap: 2em 8vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    #step-finished, #step-0{
+        grid-column: 1 / 3;
     }
 }
 
